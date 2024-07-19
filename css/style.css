@@ -128,6 +128,7 @@ html {
     font-size: 2.2rem;
     font-weight: 900;
     text-align: right;
+    margin-right: 7%;
   }
   .request__cards {
     grid-template-columns: repeat(2, 1fr);
@@ -156,6 +157,9 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
+  .request__title {
+    margin-right: 32px;
+  }
   .request__cards {
     grid-template-columns: repeat(3, 1fr);
   }
