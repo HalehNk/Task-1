@@ -124,9 +124,6 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
-    padding: 0 10%;
-  }
   .request__title {
     font-size: 2.2rem;
     font-weight: 900;
@@ -163,13 +160,3 @@ html {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/*
-echo "# Task-1" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/HalehNk/Task-1.git
-git push -u origin main 
- */
