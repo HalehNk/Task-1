@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-white: #fff;
+  --color-gray: #696969;
+  --color-dark-blue: #234894;
+  --color-light-blue: #afcedd;
+  --color-sea-green: #219f95;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.request__title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.request__cards {
+  display: grid;
+  grid-column: 1fr;
+  justify-items: center;
+  gap: 5rem;
+}
+
+.req__header,
+.req__upload {
+  display: flex;
+  align-items: center;
+}
+
+.req__header {
+  justify-content: space-between;
+  margin-bottom: 20px;
+  /* gap: 100px; */
+}
+
+.req__tag {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--color-dark-blue);
+  background-color: var(--color-light-blue);
+  padding: 6px 15px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.req__upload p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+
+.req__date {
+  font-size: 1.2ewm;
+  color: var(--color-gray);
+}
+
+.req__body__title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1e1e1e;
+}
+
+.req__body__id {
+  font-size: 1.2rem;
+  font-weight: var(--color-gray);
+  margin-bottom: 5px;
+}
+
+.req__body__info,
+.req__profile-name {
+  display: flex;
+  align-items: center;
+}
+
+.req__body__info {
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.req__profile-name {
+  gap: 7px;
+}
+
+.req__profile-name img {
+  border-radius: 5px;
+}
+
+.req__profile-name span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e1e1e;
+  white-space: nowrap;
+}
+
+.req__body__info button {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: var(--color-sea-green);
+  color: var(--color-white);
+  outline: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 9px;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 10%;
+  }
+  .request__title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-align: right;
+  }
+  .request__cards {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+    row-gap: 8rem;
+  }
+  .req__body__title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #1e1e1e;
+  }
+  .req__header {
+    gap: 150px;
+  }
+  .req__body__info {
+    gap: 100px;
+  }
+  .req__profile-name span {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .req__body__info button {
+    font-size: 1.6rem;
+    padding: 19px 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .request__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
