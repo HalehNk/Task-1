@@ -68,7 +68,7 @@ html {
 }
 
 .req__date {
-  font-size: 1.2ewm;
+  font-size: 1.2rem;
   color: var(--color-gray);
 }
 
@@ -80,7 +80,7 @@ html {
 
 .req__body__id {
   font-size: 1.2rem;
-  font-weight: var(--color-gray);
+  color: var(--color-gray);
   margin-bottom: 5px;
 }
 
